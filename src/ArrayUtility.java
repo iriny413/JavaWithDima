@@ -130,6 +130,9 @@ public class ArrayUtility {
      * Пример 1.: При вызове метода с аргументами old array = {2, 100, 12}, value=22, результат {2, 12, 22, 100}
      */
     public static int[] appendNewValueAndSort(int[] oldArray, int value) {
+
+
+
         oldArray = Arrays.copyOf(oldArray, oldArray.length + 1);
         oldArray[oldArray.length - 1] = value;
         int length = oldArray.length;
