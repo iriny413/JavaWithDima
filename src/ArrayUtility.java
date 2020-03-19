@@ -104,18 +104,20 @@ public class ArrayUtility {
         NewArray = appendNewValue(oldArray, value);
 
         int count = 0;
-        for (int i = 0; i < NewArray.length; i = i + 1) {
+        for (int i : NewArray) {
             if (i == value) {
                 count = count + 1;
             }
         }
         int[] NewArray2 = new int[NewArray.length - count];
+        int counter = 0;
         for (int i = 0; i < NewArray.length; i++) {
-            if (NewArray[i] == value) {
-                continue;
+            if (NewArray[i] != value) {
+                NewArray2[i - counter] = NewArray[i];}
+            else{
+                counter = counter + 1;
             }
-            NewArray2[i] = NewArray[i];
-        }
+            }
         return NewArray2;
     }
 }
