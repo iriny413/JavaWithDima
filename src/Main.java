@@ -120,7 +120,7 @@ public class Main {
         }
         int [] oldArray8 = new int[]{2, 100, 12, 2};
         oldArray8 = ArrayUtility.deleteAllSameValuesFromArray(oldArray8, 2);
-        System.out.println("Задание 5.1: ");
+        System.out.println("Задание 5.2: ");
         for (int i = 0; i < oldArray7.length; i = i + 1) {
             System.out.println(oldArray8[i]);
         }
