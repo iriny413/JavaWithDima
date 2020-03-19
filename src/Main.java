@@ -118,7 +118,12 @@ public class Main {
         for (int i = 0; i < oldArray7.length; i = i + 1) {
             System.out.println(oldArray7[i]);
         }
-
+        int [] oldArray8 = new int[]{2, 100, 12, 2};
+        oldArray8 = ArrayUtility.deleteAllSameValuesFromArray(oldArray8, 2);
+        System.out.println("Задание 5.1: ");
+        for (int i = 0; i < oldArray7.length; i = i + 1) {
+            System.out.println(oldArray8[i]);
+        }
         /**Задача6
          * Задача метода получить на вход 2 массива,
          * на выхоже вернуть новый массив, включающий все значения обоих массивов, без повторов
@@ -137,19 +142,19 @@ public class Main {
          *  Пример 1.: При вызове метода с аргументами old array = {2, 100, 12}, value=22, результат {2, 12, 22, 100}
          */
 
-        int [] oldArrayA = new int[]{1, 1, 1, 1};
-        oldArrayA = ArrayUtility.appendNewValueAndSort(oldArrayA, 2);
-        System.out.println("Задание 7.1: ");
-        for (int i = 0; i < oldArrayA.length; i = i + 1) {
-            System.out.println(oldArrayA[i]);
-        }
-
-        int [] oldArrayB = new int[]{2, 100, 12};
-        oldArrayB = ArrayUtility.appendNewValueAndSort(oldArrayB, 22);
-        System.out.println("Задание 7.2: ");
-        for (int i = 0; i < oldArrayB.length; i = i + 1) {
-            System.out.println(oldArrayB[i]);
-        }
+//        int [] oldArrayA = new int[]{1, 1, 1, 1};
+//        oldArrayA = ArrayUtility.appendNewValueAndSort(oldArrayA, 2);
+//        System.out.println("Задание 7.1: ");
+//        for (int i = 0; i < oldArrayA.length; i = i + 1) {
+//            System.out.println(oldArrayA[i]);
+//        }
+//
+//        int [] oldArrayB = new int[]{2, 100, 12};
+//        oldArrayB = ArrayUtility.appendNewValueAndSort(oldArrayB, 22);
+//        System.out.println("Задание 7.2: ");
+//        for (int i = 0; i < oldArrayB.length; i = i + 1) {
+//            System.out.println(oldArrayB[i]);
+//        }
 
 //        System.out.println(args[1]);
 //        System.out.println(args[2]);

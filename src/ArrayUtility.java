@@ -74,8 +74,8 @@ public class ArrayUtility {
         for (int i = 0; i < oldArray1.length; i++) {
             newArray[i] = oldArray1[i];
         }
-            for (int i = oldArray1.length; i < newArray.length; i++) {
-                newArray[i] = oldArray2[i-oldArray1.length];
+        for (int i = oldArray1.length; i < newArray.length; i++) {
+            newArray[i] = oldArray2[i - oldArray1.length];
         }
         return newArray;
     }
@@ -100,44 +100,77 @@ public class ArrayUtility {
      * Пример 1.: При вызове метода с аргументами old array = {2, 100, 12, 2}, value=2, результат {100, 12}
      */
     public static int[] deleteAllSameValuesFromArray(int[] oldArray, int value) {
-        int[] result = new int[0];
-        for (int i = 0; i < oldArray.length; i = i + 1) {
-            if (i != value) {
+        int[] NewArray;
+        NewArray = appendNewValue(oldArray, value);
+
+        int count = 0;
+        for (int i = 0; i < NewArray.length; i = i + 1) {
+            if (i == value) {
+                count = count + 1;
+            }
+        }
+        int[] NewArray2 = new int[NewArray.length - count];
+        for (int i = 0; i < NewArray.length; i++) {
+            if (NewArray[i] == value) {
                 continue;
             }
-                else{
-                    result = appendNewValue(oldArray, value);
-                }
+            NewArray2[i] = NewArray[i];
         }
-        return result;
+        return NewArray2;
     }
+}
 
-    /**Задача6
-     * Задача метода получить на вход 2 массива,
-     * на выхоже вернуть новый массив, включающий все значения обоих массивов, без повторов
-     *
-     *  Пример 1.: При вызове метода с аргументами oldArray1 = {1, 2}, oldArray1 = {1, 3}, результат {1, 2, 3}
-     *  Пример 2.: При вызове метода с аргументами oldArray1 = {11, 2}, oldArray1 = {10000}, результат {11, 2, 10000}
-     */
+/**
+ * Задача6
+ * Задача метода получить на вход 2 массива,
+ * на выхоже вернуть новый массив, включающий все значения обоих массивов, без повторов
+ * <p>
+ * Пример 1.: При вызове метода с аргументами oldArray1 = {1, 2}, oldArray1 = {1, 3}, результат {1, 2, 3}
+ * Пример 2.: При вызове метода с аргументами oldArray1 = {11, 2}, oldArray1 = {10000}, результат {11, 2, 10000}
+ * <p>
+ * Задача 7
+ * Задача метода получить на вход массив и еще одно число,
+ * на выхоже вернуть новый массив, в котором будет присутствовать новое значение и массив будет отсортирован по возрастанию
+ * Пример 1.: При вызове метода с аргументами old array = {1, 1, 1, 1}, value=2, результат {1, 1, 1, 1, 2}
+ * Пример 1.: При вызове метода с аргументами old array = {2, 100, 12}, value=22, результат {2, 12, 22, 100}
+ * <p>
+ * Задача 7
+ * Задача метода получить на вход массив и еще одно число,
+ * на выхоже вернуть новый массив, в котором будет присутствовать новое значение и массив будет отсортирован по возрастанию
+ * Пример 1.: При вызове метода с аргументами old array = {1, 1, 1, 1}, value=2, результат {1, 1, 1, 1, 2}
+ * Пример 1.: При вызове метода с аргументами old array = {2, 100, 12}, value=22, результат {2, 12, 22, 100}
+ * <p>
+ * Задача 7
+ * Задача метода получить на вход массив и еще одно число,
+ * на выхоже вернуть новый массив, в котором будет присутствовать новое значение и массив будет отсортирован по возрастанию
+ * Пример 1.: При вызове метода с аргументами old array = {1, 1, 1, 1}, value=2, результат {1, 1, 1, 1, 2}
+ * Пример 1.: При вызове метода с аргументами old array = {2, 100, 12}, value=22, результат {2, 12, 22, 100}
+ * <p>
+ * Задача 7
+ * Задача метода получить на вход массив и еще одно число,
+ * на выхоже вернуть новый массив, в котором будет присутствовать новое значение и массив будет отсортирован по возрастанию
+ * Пример 1.: При вызове метода с аргументами old array = {1, 1, 1, 1}, value=2, результат {1, 1, 1, 1, 2}
+ * Пример 1.: При вызове метода с аргументами old array = {2, 100, 12}, value=22, результат {2, 12, 22, 100}
+ */
 //    public static int[] appendAllUniqueValues(int[] oldArray1, int[] oldArray2)
 
 
-    /**
-     * Задача 7
-     * Задача метода получить на вход массив и еще одно число,
-     * на выхоже вернуть новый массив, в котором будет присутствовать новое значение и массив будет отсортирован по возрастанию
-     * Пример 1.: При вызове метода с аргументами old array = {1, 1, 1, 1}, value=2, результат {1, 1, 1, 1, 2}
-     * Пример 1.: При вызове метода с аргументами old array = {2, 100, 12}, value=22, результат {2, 12, 22, 100}
-     */
-    public static int[] appendNewValueAndSort(int[] oldArray, int value) {
+/**
+ * Задача 7
+ * Задача метода получить на вход массив и еще одно число,
+ * на выхоже вернуть новый массив, в котором будет присутствовать новое значение и массив будет отсортирован по возрастанию
+ * Пример 1.: При вызове метода с аргументами old array = {1, 1, 1, 1}, value=2, результат {1, 1, 1, 1, 2}
+ * Пример 1.: При вызове метода с аргументами old array = {2, 100, 12}, value=22, результат {2, 12, 22, 100}
+ */
+//    /public static int[] appendNewValueAndSort(int[] oldArray, int value) {
+//
+//
+//
+//        oldArray = Arrays.copyOf(oldArray, oldArray.length + 1);
+//        oldArray[oldArray.length - 1] = value;
+//        int length = oldArray.length;
+//        Arrays.sort(oldArray, 1, length);
+//        return (oldArray);
+//    }
 
-
-
-        oldArray = Arrays.copyOf(oldArray, oldArray.length + 1);
-        oldArray[oldArray.length - 1] = value;
-        int length = oldArray.length;
-        Arrays.sort(oldArray, 1, length);
-        return (oldArray);
-    }
-}
 
