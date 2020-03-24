@@ -9,6 +9,7 @@ while(isNeedNewAttempt){
     counter++;
 }
     if (counter>=5){
+        k
 
 }
     }
