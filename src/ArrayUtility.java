@@ -64,12 +64,18 @@ public class ArrayUtility {
         for (int i = 0; i < oldArray1.length; i++) {
             newArray[i] = oldArray1[i];
         }
-        for (int i = oldArray1.length; i < newArray.length; i++) {
-            newArray[i] = oldArray2[i - oldArray1.length];
-        }
-        return newArray;
+//        for (int i = oldArray1.length; i < newArray.length; i++) {
+//            newArray[i] = oldArray2[i - oldArray1.length];
+//        }
+//        return newArray;
+//    }
+        int resultArrayEmptyStartVariables = oldArray1.length;//2
+        for (int i = 0; i < oldArray2.length; i++) {
+            newArray[resultArrayEmptyStartVariables] = oldArray2[i];
+            resultArrayEmptyStartVariables = resultArrayEmptyStartVariables + 1;
     }
-
+    return newArray;
+}
     /**
      * Задача 5
      * Задача метода получить на вход массив и еще одно число,
@@ -79,27 +85,37 @@ public class ArrayUtility {
      * Пример 1.: При вызове метода с аргументами old array = {2, 100, 12, 2}, value=2, результат {100, 12}
      */
     public static int[] deleteAllSameValuesFromArray(int[] oldArray, int value) {
-        int[] NewArray;
-        NewArray = appendNewValue(oldArray, value);
-
-        int count = 0;
-        for (int i : NewArray) {
-            if (i == value) {
-                count = count + 1;
+        for(int index = 0; index < oldArray.length; index = index + 1){
+                int currentValueByIndex = oldArray[index];
+            if (currentValueByIndex == value){
+                oldArray[index]= 0;
             }
         }
-        int[] NewArray2 = new int[NewArray.length - count];
-        int counter = 0;
-        for (int i = 0; i < NewArray.length; i++) {
-            if (NewArray[i] != value) {
-                NewArray2[i - counter] = NewArray[i];
-            } else {
-                counter = counter + 1;
-            }
-        }
-        return NewArray2;
+        return oldArray;
     }
-}
+    }
+//    public static int[] deleteAllSameValuesFromArray(int[] oldArray, int value) {
+//        int[] NewArray;
+//        NewArray = appendNewValue(oldArray, value);
+//
+//        int count = 0;
+//        for (int i : NewArray) {
+//            if (i == value) {
+//                count = count + 1;
+//            }
+//        }
+//        int[] NewArray2 = new int[NewArray.length - count];
+//        int counter = 0;
+//        for (int i = 0; i < NewArray.length; i++) {
+//            if (NewArray[i] != value) {
+//                NewArray2[i - counter] = NewArray[i];
+//            } else {
+//                counter = counter + 1;
+//            }
+//        }
+//        return NewArray2;
+//    }
+//}
 /**
  * Задача6
  * Задача метода получить на вход 2 массива,
