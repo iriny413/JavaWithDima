@@ -1,5 +1,7 @@
 package main.java.lesson20200331.actor;
 
+import main.java.lesson20200402.animal.Dog;
+
 public class Person {
 
     public static void eat(String name, String food) {
@@ -8,6 +10,17 @@ public class Person {
 
     public static void drink(String name, String drink) {
         System.out.println(name + " drinks " + drink);
+    }
+
+    public static void playWithDog(){
+        Dog.getBreed();
+        Dog.getName();
+        Dog.getSex();
+        Dog.getFavouritePlaything();
+        Dog.getAge();
+        Dog.gaf("brbr");
+        Dog.appendYear(3);
+        //Dog.guessAge(int[]{3, 2})
     }
 }
         // Создать пакет lesson20200331. Внутри создать два пакета: actor и object.

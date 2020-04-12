@@ -1,4 +1,4 @@
-package main.java.lesson20200331;
+package main.java;
 
 import main.java.lesson20200331.actor.Person;
 import main.java.lesson20200331.object.Chair;
@@ -16,5 +16,6 @@ class Main {
         Table.getHeight(12);
         Chair.getHeight(5);
         Sofa.getHeight(6);
+        Person.playWithDog();
     }
 }
