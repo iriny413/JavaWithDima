@@ -13,14 +13,14 @@ public class Person {
     }
 
     public static void playWithDog(){
-        Dog.getBreed();
-        Dog.getName();
-        Dog.getSex();
-        Dog.getFavouritePlaything();
-        Dog.getAge();
+        System.out.println("Dog's breed is " +Dog.getBreed());
+        System.out.println("Dog's name is " + Dog.getName());
+        System.out.println("Dog's sex is " + Dog.getSex());
+        System.out.println("Dog's favourite plaything is " + Dog.getFavouritePlaything());
+        System.out.println("Current dog age = " + Dog.getAge());
         Dog.gaf("brbr");
         Dog.appendYear(3);
-        //Dog.guessAge(int[]{3, 2})
+        System.out.println(Dog.guessAge(new int[]{1,2,100}));
     }
 }
         // Создать пакет lesson20200331. Внутри создать два пакета: actor и object.
