@@ -31,7 +31,7 @@ public class Dog {
      * возвращает возраст собаки
      */
     public static int getAge() {
-        return age;
+       return age;
     }
 
     /**
@@ -60,6 +60,16 @@ public class Dog {
         }
         return result;
     }
+
+//    public static boolean guessAge(int[] optionArray) {
+//        boolean result = false;
+//        for (int i = 0; i < optionArray.length; i++) {
+//            if (optionArray[i] == age) {
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
 
     public static String getBreed(){
         return breed;

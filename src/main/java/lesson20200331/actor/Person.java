@@ -20,7 +20,7 @@ public class Person {
         System.out.println("Current dog age = " + Dog.getAge());
         Dog.gaf("brbr");
         Dog.appendYear(3);
-        System.out.println(Dog.guessAge(new int[]{1,2,100}));
+        //System.out.println(Dog.guessAge(new int[]{1,2,100}));
     }
 }
         // Создать пакет lesson20200331. Внутри создать два пакета: actor и object.

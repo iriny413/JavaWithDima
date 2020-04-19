@@ -1,3 +1,5 @@
+package main.java;
+
 import javax.xml.bind.SchemaOutputResolver;
 import java.util.Arrays;
 
