@@ -1,9 +1,9 @@
 package main.java.lesson20200407_location;
 
 public class City {
-    public static String name = "default";
-    public static int size = 0;
-    public static String key = "spb";
+    public String name = "default";
+    public int size = 0;
+    public String key = "spb";
 /**
 Добавить поле key(по умолчанию "spb").
  В методе main создать массив длинной 10 тип City.
@@ -21,7 +21,7 @@ public class City {
     {
         return "City{" +
                 "newName='" + name + '\'' +
-                ", newSize=" + size + '\'' + ", key='" + key +
+                ", newSize=" + size + '\'' + ", key='" + key + '\'' +
                 '}';
     }
 }
