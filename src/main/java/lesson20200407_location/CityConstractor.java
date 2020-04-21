@@ -7,7 +7,7 @@ public class CityConstractor {
         cityArray[0] = new City("msk", 444);
         cityArray[1] = new City("vrn", 50000);
         cityArray[2] = new City("spb", 60000);
-        cityArray[3] = new City("toronto", 70000);
+        cityArray[3] = new City();
         cityArray[4] = new City("lpzk", 80000);
         cityArray[5] = new City("brnsk", 90000);
         cityArray[6] = new City("omsk", 110000);

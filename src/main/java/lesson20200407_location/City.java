@@ -14,7 +14,10 @@ public class City {
     public City (String newName, int newSize) {
         name = newName;
         size = newSize;
-        System.out.println("Hi!!");
+    }
+
+    public City() {
+        System.out.println("Hi2!!");
     }
 
     public String toString()
