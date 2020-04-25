@@ -7,6 +7,10 @@ import main.java.lesson20200331.object.Table;
 import main.java.lesson20200407_location.CityConstractor;
 import main.java.lesson20200414.EqualsStreet;
 import main.java.lesson20200414.StreetConstractor;
+import main.java.lesson20200421.Bus;
+import main.java.lesson20200421.Car;
+import main.java.lesson20200421.Truck;
+import main.java.lesson20200421.Vehicle;
 
 class Main {
     public static void main(String[] args) {
@@ -20,6 +24,14 @@ class Main {
 //        Person.playWithDog();
         //CityConstractor.buildCities();
         //StreetConstractor.buildStreet();
-        StreetConstractor.compareData();
+        //StreetConstractor.compareData();
+        Vehicle.drive();
+        Vehicle.stop();
+        Truck.drive();
+        Truck.stop();
+        Bus.drive();
+        Bus.stop();
+        Car.drive();
+        Car.stop();
     }
 }
