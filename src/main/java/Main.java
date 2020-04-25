@@ -5,6 +5,7 @@ import main.java.lesson20200331.object.Chair;
 import main.java.lesson20200331.object.Sofa;
 import main.java.lesson20200331.object.Table;
 import main.java.lesson20200407_location.CityConstractor;
+import main.java.lesson20200414.EqualsStreet;
 import main.java.lesson20200414.StreetConstractor;
 
 class Main {
@@ -18,6 +19,7 @@ class Main {
 //        Sofa.getHeight(6);
 //        Person.playWithDog();
         //CityConstractor.buildCities();
-        StreetConstractor.buildStreet();
+        //StreetConstractor.buildStreet();
+        StreetConstractor.compareData();
     }
 }
