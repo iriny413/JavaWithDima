@@ -16,6 +16,22 @@ public class Man {
                 Objects.equals(age, that.age) &&
                 Objects.equals(name, that.name);
     }
+//    @Override
+//    public boolean equals(final Object o)
+//    {
+//        if (this == o)
+//        {
+//            return true;
+//        }
+//        if (o == null || getClass() != o.getClass())
+//        {
+//            return false;
+//        }
+//        final Man man = (Man)o;
+//        return dnaCode == man.dnaCode &&
+//                age == man.age;
+//    }
+
 
     @Override
     public int hashCode() {

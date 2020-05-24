@@ -11,6 +11,7 @@ import main.java.lesson20200421.Bus;
 import main.java.lesson20200421.Car;
 import main.java.lesson20200421.Truck;
 import main.java.lesson20200421.Vehicle;
+import main.java.lesson20200423.ArrayListLesson;
 import main.java.lesson20200423.TryCatchLesson;
 import main.java.lesson20200522_hashCodeEquals.EqualHashCodeLesson;
 import main.java.lesson20200522_hashCodeEquals.Man;
@@ -39,5 +40,6 @@ class Main {
         //Car.stop();
         //TryCatchLesson.startLessonExample();
         EqualHashCodeLesson.showMan();
+        ArrayListLesson.arrayListMethods();
     }
 }

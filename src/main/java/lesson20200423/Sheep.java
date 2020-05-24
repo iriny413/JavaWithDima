@@ -2,7 +2,7 @@ package main.java.lesson20200423;
 
 public class Sheep extends Animal{
 
-    private String name = "default name";
+    public String name = "default name";
     private int age = 0;
 
     public Sheep (String name, int age) {
