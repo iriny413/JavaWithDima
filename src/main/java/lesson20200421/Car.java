@@ -4,7 +4,7 @@ public class Car extends Vehicle{
     public static void drive(){
         System.out.println("The CAR has started moving");
     }
-    public static void stop(){
+    public void stop(){
         System.out.println("The CAR has stopped");
     }
 }
