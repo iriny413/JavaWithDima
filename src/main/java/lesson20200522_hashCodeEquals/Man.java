@@ -7,6 +7,15 @@ public class Man {
     public static int dnaCode;
     public static String name;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Man that = (Man) o;
+        return Objects.equals(dnaCode, that.dnaCode) &&
+                Objects.equals(age, that.age) &&
+                Objects.equals(name, that.name);
+    }
 
     @Override
     public int hashCode() {
@@ -32,13 +41,15 @@ public class Man {
 //    public boolean equals(Man man) {
 //        return this.dnaCode == man.dnaCode;
 //    }
-        /**
-         * public boolean equals(Object obj) {
-         *    return (this == obj);
-         * }
-         public boolean equals(Man man) {
-         return this.dnaCode ==  man.dnaCode;
-         }
-         */
+
+    /**
+     * public boolean equals(Object obj) {
+     *    return (this == obj);
+     * }
+     public boolean equals(Man man) {
+     return this.dnaCode ==  man.dnaCode;
+     }
+     */
+
 }
 
