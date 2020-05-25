@@ -12,6 +12,10 @@ public class Sheep extends Animal{
 
     public Sheep(){}
 
+    public Sheep(String name) {
+        this.name = name;
+    }
+
     public void doIt()
     {
         System.out.println("doIT");
