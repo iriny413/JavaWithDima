@@ -20,4 +20,12 @@ public class Sheep extends Animal{
     {
         System.out.println("doIT");
     }
+
+    @Override
+    public String toString() {
+        return "Sheep{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

@@ -39,7 +39,7 @@ class Main {
         //Car.drive();
         //Car.stop();
         //TryCatchLesson.startLessonExample();
-        EqualHashCodeLesson.showMan();
+        //EqualHashCodeLesson.showMan();
         ArrayListLesson.arrayListMethods();
     }
 }
