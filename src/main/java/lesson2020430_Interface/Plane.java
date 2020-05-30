@@ -11,12 +11,20 @@ public class Plane implements Repairable {
             boolean isNeedRepair = false;
         }else{
             costOfRepair = costOfRepair-cash;
-            System.out.println("Нужны еще деньги");
+            System.out.println("Plane: Нужны еще деньги");
         }
     }
 
     @Override
     public boolean isNeedToRepair() {
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Plane{" +
+                "isNeedRepair=" + isNeedRepair +
+                ", costOfRepair=" + costOfRepair +
+                '}';
     }
 }

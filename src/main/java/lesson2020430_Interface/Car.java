@@ -6,16 +6,23 @@ public class Car implements Repairable {
     @Override
     public void repair(int cash) {
         if (cash > 10) {
-            System.out.println("Отремонтированно");
+            System.out.println("Car: Отремонтированно");
             boolean isNeedRepair = false;
         }
     else{
-                System.out.println("Не хватает денег");
+                System.out.println("Car: Не хватает денег");
             }
         }
 
     @Override
     public boolean isNeedToRepair() {
         return false;
+    }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "isNeedRepair=" + isNeedRepair +
+                '}';
     }
 }
