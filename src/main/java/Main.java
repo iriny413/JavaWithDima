@@ -40,8 +40,8 @@ class Main {
         //Car.drive();
         //Car.stop();
         //TryCatchLesson.startLessonExample();
-        //EqualHashCodeLesson.showMan();
-        //ArrayListLesson.arrayListMethods();
+//        EqualHashCodeLesson.showDiff();
+        ArrayListLesson.arrayListMethods();
         IntarfaceLessonHW.run();
     }
 }
