@@ -15,6 +15,7 @@ import main.java.lesson20200423.ArrayListLesson;
 import main.java.lesson20200423.TryCatchLesson;
 import main.java.lesson20200522_hashCodeEquals.EqualHashCodeLesson;
 import main.java.lesson20200522_hashCodeEquals.Man;
+import main.java.lesson2020430_Interface.IntarfaceLessonHW;
 
 class Main {
     public static void main(String[] args) {
@@ -40,6 +41,7 @@ class Main {
         //Car.stop();
         //TryCatchLesson.startLessonExample();
         //EqualHashCodeLesson.showMan();
-        ArrayListLesson.arrayListMethods();
+        //ArrayListLesson.arrayListMethods();
+        IntarfaceLessonHW.run();
     }
 }

@@ -30,7 +30,7 @@ public class ArrayListLesson {
         sheepList2.add(new Sheep("101"));
         sheepList2.add(new Sheep("102"));
         sheepList2.add(new Sheep("103"));
-        System.out.println("sheepList2 size - add sheep: " + sheepList2 + " " + sheepList2.size());
+        System.out.println("sheepList2 - add sheep: " + sheepList2 + " " + sheepList2.size());
         Sheep a = new Sheep("302");
 
         sheepList2.set(3, new Sheep("301"));
@@ -38,6 +38,14 @@ public class ArrayListLesson {
         sheepList2.set(5, new Sheep("303"));
         sheepList2.set(6, new Sheep("304"));
         sheepList2.set(7, new Sheep("305"));
-        System.out.println("sheepList2 size - replace sheep: " + sheepList2 + " " + sheepList2.size());
-    }
-}
+        System.out.println("sheepList2 - replace sheep: " + sheepList2 + " " + sheepList2.size());
+
+
+        //for (int i= 0; i < sheepList2.size(); i++){
+            int index = sheepList2.indexOf("1");
+            sheepList2.set(index, new Sheep("Updated"));
+//            if (sheepList2.get(i).equals("1")){
+//                sheepList2.set(i, Sheep);
+            System.out.println(index + sheepList2.size());
+            }
+        }
