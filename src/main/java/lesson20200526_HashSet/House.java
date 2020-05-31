@@ -6,16 +6,32 @@ import java.util.Objects;
 import java.util.Set;
 
 public class House {
-    Street street = new Street();
+    public Street street;
     public int numberOfHouseResidents;
     public List apartmentNumber;
 
     @Override
     public String toString() {
         return "House{" +
-                "street1=" + street +
+                "street=" + street +
                 ", numberOfHouseResidents=" + numberOfHouseResidents +
                 ", apartmentNumber=" + apartmentNumber +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        House house = (House) o;
+        return numberOfHouseResidents == house.numberOfHouseResidents &&
+                Objects.equals(street, house.street) &&
+                Objects.equals(apartmentNumber, house.apartmentNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(street, numberOfHouseResidents, apartmentNumber);
+    }
 }
+

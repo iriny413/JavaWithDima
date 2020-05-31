@@ -1,6 +1,7 @@
 package main.java;
 
 import main.java.lesson20200423_TryCatch_ArrayList.ArrayListLesson;
+import main.java.lesson20200526_HashSet.HashSetLesson;
 import main.java.lesson2020430_Interface.IntarfaceLessonHW;
 
 class Main {
@@ -27,8 +28,8 @@ class Main {
         //Car.stop();
         //TryCatchLesson.startLessonExample();
 //        EqualHashCodeLesson.showDiff();
-          ArrayListLesson.arrayListMethods();
+//          ArrayListLesson.arrayListMethods();
 //        IntarfaceLessonHW.run();
-//        HashSetLesson.runCheck();
+        HashSetLesson.runCheck();
     }
 }
