@@ -1,21 +1,6 @@
 package main.java;
 
-import main.java.lesson20200331.actor.Person;
-import main.java.lesson20200331.object.Chair;
-import main.java.lesson20200331.object.Sofa;
-import main.java.lesson20200331.object.Table;
-import main.java.lesson20200407_location.CityConstractor;
-import main.java.lesson20200414.EqualsStreet;
-import main.java.lesson20200414.StreetConstractor;
-import main.java.lesson20200421.Bus;
-import main.java.lesson20200421.Car;
-import main.java.lesson20200421.Truck;
-import main.java.lesson20200421.Vehicle;
-import main.java.lesson20200423.ArrayListLesson;
-import main.java.lesson20200423.TryCatchLesson;
-import main.java.lesson20200522_hashCodeEquals.EqualHashCodeLesson;
-import main.java.lesson20200522_hashCodeEquals.Man;
-import main.java.lesson20200526_HashSet.HashSetLesson;
+import main.java.lesson20200423_TryCatch_ArrayList.ArrayListLesson;
 import main.java.lesson2020430_Interface.IntarfaceLessonHW;
 
 class Main {
@@ -42,8 +27,8 @@ class Main {
         //Car.stop();
         //TryCatchLesson.startLessonExample();
 //        EqualHashCodeLesson.showDiff();
-//        ArrayListLesson.arrayListMethods();
-        IntarfaceLessonHW.run();
+          ArrayListLesson.arrayListMethods();
+//        IntarfaceLessonHW.run();
 //        HashSetLesson.runCheck();
     }
 }

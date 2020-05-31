@@ -1,4 +1,4 @@
-package main.java.lesson20200423;
+package main.java.lesson20200423_TryCatch_ArrayList;
 
 public class Sheep extends Animal{
 
@@ -13,6 +13,14 @@ public class Sheep extends Animal{
     public Sheep(){}
 
     public Sheep(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
         this.name = name;
     }
 

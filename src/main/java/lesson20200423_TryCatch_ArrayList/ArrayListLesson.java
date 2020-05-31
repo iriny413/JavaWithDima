@@ -1,7 +1,6 @@
-package main.java.lesson20200423;
+package main.java.lesson20200423_TryCatch_ArrayList;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class ArrayListLesson {
     /**
@@ -41,11 +40,11 @@ public class ArrayListLesson {
         System.out.println("sheepList2 - replace sheep: " + sheepList2 + " " + sheepList2.size());
 
 
-        //for (int i= 0; i < sheepList2.size(); i++){
-            int index = sheepList2.indexOf("1");
-            sheepList2.set(index, new Sheep("Updated"));
-//            if (sheepList2.get(i).equals("1")){
-//                sheepList2.set(i, Sheep);
-            System.out.println(index + sheepList2.size());
-            }
+        System.out.println("Element containing '1' is present - " + sheepList2.contains("1"));
+        for(int i = 0; i< sheepList2.size(); i++){
+            if(sheepList2.get(i).getName() == "1")
+            sheepList2.get(i).setName("Updated");
         }
+        System.out.println(" 'After updated': " + sheepList2 + "&" + sheepList2.size());
+    }
+}
