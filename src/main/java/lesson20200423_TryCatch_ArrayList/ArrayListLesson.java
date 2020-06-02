@@ -1,6 +1,7 @@
 package main.java.lesson20200423_TryCatch_ArrayList;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListLesson {
     /**
@@ -39,8 +40,21 @@ public class ArrayListLesson {
         sheepList2.set(7, new Sheep("305"));
         System.out.println("sheepList2 - replace sheep: " + sheepList2 + " " + sheepList2.size());
 
+        String ab = "1";
+        List arrayList3 = new ArrayList();
+        arrayList3.add(new Sheep());
+        arrayList3.add(ab);
+        boolean is1Contains = arrayList3.contains("1");
 
-        System.out.println("Element containing '1' is present: " + sheepList2.contains("1"));
+        for (Sheep sheep: sheepList2){
+            System.out.println("Is1contains in name in sheepList2 " + sheep.name.contains("1"));
+            if(sheep.name.contains("1")){
+                sheep.name = "UPDATED";
+            }
+        }
+        System.out.println(" 'After updated_NEW': " + sheepList2 + "&" + sheepList2.size());
+
+        System.out.println("List containing '1': " + sheepList2.contains("1"));
 //        for(int i = 0; i< sheepList2.size(); i++){
 //            if(sheepList2.get(i).getName() == "1")
 //            sheepList2.get(i).setName("Updated");
@@ -48,6 +62,6 @@ public class ArrayListLesson {
             if(sheepList2.get(i).getName().contains("1"))
                 sheepList2.get(i).setName("Updated");
         }
-        System.out.println(" 'After updated': " + sheepList2 + "&" + sheepList2.size());
+        System.out.println(" 'After updated_old': " + sheepList2 + "&" + sheepList2.size());
     }
 }
