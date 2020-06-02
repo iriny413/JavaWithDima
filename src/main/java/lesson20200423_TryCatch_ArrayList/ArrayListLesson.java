@@ -40,10 +40,13 @@ public class ArrayListLesson {
         System.out.println("sheepList2 - replace sheep: " + sheepList2 + " " + sheepList2.size());
 
 
-        System.out.println("Element containing '1' is present - " + sheepList2.contains("1"));
+        System.out.println("Element containing '1' is present: " + sheepList2.contains("1"));
+//        for(int i = 0; i< sheepList2.size(); i++){
+//            if(sheepList2.get(i).getName() == "1")
+//            sheepList2.get(i).setName("Updated");
         for(int i = 0; i< sheepList2.size(); i++){
-            if(sheepList2.get(i).getName() == "1")
-            sheepList2.get(i).setName("Updated");
+            if(sheepList2.get(i).getName().contains("1"))
+                sheepList2.get(i).setName("Updated");
         }
         System.out.println(" 'After updated': " + sheepList2 + "&" + sheepList2.size());
     }

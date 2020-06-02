@@ -28,8 +28,8 @@ class Main {
         //Car.stop();
         //TryCatchLesson.startLessonExample();
 //        EqualHashCodeLesson.showDiff();
-//          ArrayListLesson.arrayListMethods();
+          ArrayListLesson.arrayListMethods();
 //        IntarfaceLessonHW.run();
-        HashSetLesson.runCheck();
+//        HashSetLesson.runCheck();
     }
 }
